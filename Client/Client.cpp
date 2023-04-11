@@ -64,7 +64,7 @@ void Client:: BeginChat(){
         string message = SendMessage(); // calls the function above 
         char input_string[message.length() + 1]; // instantiate  the input string array, adding 1 to the length 
         if (Quit(input_string)){ // check if quit has been mentioned in the chat 
-            cout << "The chat has ended" << endl; // this will exit the chat 
+            cout << "The chat has ended" << endl; //this will print out the exit message to the chat
         };
         char buffer [bufferSize]; // instantiate buffer array to a size of 1024 
         RecieveMessage(buffer, bufferSize); // call recieve message function defined above with the message and size 
